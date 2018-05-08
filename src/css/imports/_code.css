@@ -4,5 +4,5 @@ pre {
   overflow: scroll;
   margin-bottom: var(--spacing-medium);
   background-color: var(--grey-1);
-  padding: var(--spacing-small);
+  
 }
