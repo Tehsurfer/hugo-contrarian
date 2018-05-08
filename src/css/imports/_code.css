@@ -1,2 +1,6 @@
 
-pre{--font-size: 10px;}
+pre{
+   overflow: scroll;
+   margin-bottom: var(--spacing-medium);
+   background-color: var(--grey-1);
+   font-size: 10px;}
