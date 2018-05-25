@@ -1,5 +1,5 @@
 +++
-title = "Profit Tables"
-type = "profittables"
-page="/profittables.html"
+title = "Values"
+type = "values"
+page="/values.html"
 +++
