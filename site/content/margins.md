@@ -1,1 +1,1 @@
-+++ title = "Margin Tables" type = "margins" page="/margins.html" +++
++++ title = "Margin Tables" type = "margins" page="/margins/singtle.html" +++
