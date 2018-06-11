@@ -1,23 +1,25 @@
-{{ partial "head" . }}
-
-
-
-{{ partial "nav" . }}
-
+<html>
+<head>
+    <script src="chart.js"></script>
+    <script src="data.js"></script>
+<pre>WELCOME TO THE ARRRBITRAGE!</pre>
+</head>
 
 <body>
+
 <canvas id="bar-chart" width="800" height="450"></canvas>
+
 <script>
 // Bar chart
 new Chart(document.getElementById("bar-chart"), {
     type: 'line',
     data: {
-      labels: [1,2,3,4,5],
+      labels: date,
       datasets: [
         {
           label: "Arbitrage values",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [1,2,3,4,5]
+          data: arbData
         }
       ]
     },
@@ -25,12 +27,197 @@ new Chart(document.getElementById("bar-chart"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Best arbitrage value over the past 10 minutes'
+        text: 'Predicted world population (millions) in 2050'
       }
     }
 });
 </script>
-</body>
+
+    
 
 
-{{ partial "footer" . }}
+<pre>We last tested the waters at 15:56:57 08 05 18 New Zealand Standard Time
+</pre><pre>
+</pre><pre>BTC Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>ACX.io   	|	12651.44  	|	12693.0
+</pre><pre>BTC Mrkts	|	12467.75  	|	12499.97
+</pre><pre>IND RES  	|	12520.94  	|	12600.0
+</pre><pre>Coinspot	|	12510.0  	|	12688.5
+</pre><pre>CSpot B/S	|	12644.09  	|	12707.49
+</pre><pre>Bitfinex	|	12576.226  	|	12576.359
+</pre><pre>Coinfloor	|	12556.62  	|	12594.577
+</pre><pre>KrakenUS	|	12575.959  	|	12576.092
+</pre><pre>Bittrex 	|	12596.382  	|	12606.756
+</pre><pre>Gemini  	|	12565.427  	|	12567.427
+</pre><pre>Bitstamp	|	12558.774  	|	12558.788
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>BTC Native buy prices (for validation)
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>ACX.io   	|	12651.4  	|	12693.0
+</pre><pre>BTC Mrkts	|	12467.8  	|	12500.0
+</pre><pre>IND RES  	|	12520.9  	|	12600.0
+</pre><pre>Coinspot	|	12510.0  	|	12688.5
+</pre><pre>CSpot B/S	|	12644.1  	|	12707.5
+</pre><pre>Bitfinex	|	9433.1  	|	9433.2
+</pre><pre>Coinfloor	|	6947.0  	|	6968.0
+</pre><pre>KrakenUS	|	9432.9  	|	9433.0
+</pre><pre>Bittrex 	|	9448.2  	|	9456.0
+</pre><pre>Gemini  	|	9425.0  	|	9426.5
+</pre><pre>Bitstamp	|	9420.0  	|	9420.0
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>BTC Market Prices for a depth of 2 BTC
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>ACX.io     	|	12762.0  	|	12649.0
+</pre><pre>BTC Mrkts  	|	12500.0  	|	12461.0
+</pre><pre>IND RES    	|	12673.0  	|	12521.0
+</pre><pre>Coinspot  	|	12673.0  	|	12521.0
+</pre><pre>Coinfloor  	|	6973.0  	|	6937.0
+</pre><pre>KrakenUS  	|	9437.0  	|	9430.0
+</pre><pre>Bittrex   	|	9466.0  	|	9448.0
+</pre><pre>Gemini    	|	9427.0  	|	9413.0
+</pre><pre>Bitstamp  	|	9422.0  	|	9420.0
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>BTC MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>BTC MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>ETH Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>ACX.io   	|	1034.88  	|	1045.36
+</pre><pre>BTC Mrkts	|	1023.82  	|	1025.0
+</pre><pre>IND RES  	|	1024.12  	|	1034.42
+</pre><pre>Coinspot	|	1000.0  	|	1040.0
+</pre><pre>CSpot B/S	|	1035.66  	|	1040.74
+</pre><pre>Bitfinex	|	1027.219  	|	1027.272
+</pre><pre>KrakenUS	|	1026.552  	|	1026.565
+</pre><pre>Bittrex 	|	1022.712  	|	1027.765
+</pre><pre>Gemini  	|	1025.379  	|	1025.512
+</pre><pre>Bitstamp	|	1026.139  	|	1026.539
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>ETH MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>ETH MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>LTC Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>BTC Mrkts	|	222.4  	|	223.52
+</pre><pre>Coinspot	|	224.0  	|	228.0
+</pre><pre>CSpot B/S	|	224.03  	|	225.92
+</pre><pre>Bitfinex	|	222.898  	|	222.911
+</pre><pre>KrakenUS	|	222.471  	|	222.765
+</pre><pre>Bittrex 	|	223.368  	|	223.978
+</pre><pre>Bitstamp	|	222.485  	|	223.005
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>LTC MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>LTC MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>BCH Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>ACX.io   	|	2176.67  	|	2300.0
+</pre><pre>BTC Mrkts	|	2219.15  	|	2238.0
+</pre><pre>IND RES  	|	2205.56  	|	2249.0
+</pre><pre>Bitfinex	|	2241.912  	|	2243.379
+</pre><pre>Coinfloor	|	2143.681  	|	2302.74
+</pre><pre>KrakenUS	|	2239.246  	|	2243.912
+</pre><pre>Bittrex 	|	2230.233  	|	2242.824
+</pre><pre>Bitstamp	|	2237.126  	|	2241.099
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>BCH MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>BCH MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>OMG Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>CSpot B/S	|	22.44  	|	22.88
+</pre><pre>Bitfinex	|	22.432  	|	22.454
+</pre><pre>Bittrex 	|	22.371  	|	22.422
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>OMG MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>OMG MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>TRX Market Prices
+</pre><pre>Exchange 	|	 Buy Price 	|	 SellPrice 
+</pre><pre>CSpot B/S	|	0.115  	|	0.116
+</pre><pre>Bitfinex	|	0.114  	|	0.114
+</pre><pre>Bittrex 	|	0.115  	|	0.115
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>TRX MARGIN COMBINATIONS (Trade fees and exchange rates included only)
+</pre><pre>Direction		|	 Margin
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>
+</pre><pre>TRX MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
+</pre><pre>Direction		|	 Profit
+</pre><pre>--- none :( ---
+</pre><pre>
+</pre><pre>--------------------------------------------------------------------
+</pre><pre>
+</pre><pre>--------XRP ARBITRAGES--------
+</pre><pre>+--------------------+----------+
+</pre><pre>|       Market       |  Price   |
+</pre><pre>+--------------------+----------+
+</pre><pre>|   GatehubXRP/USD   | 0.801647 |
+</pre><pre>|   GatehubXRP/BTC   | 0.823768 |
+</pre><pre>|   BittrexXRP/BTC   | 0.841891 |
+</pre><pre>| BTC MarketsXRP/AUD | 0.84144  |
+</pre><pre>+--------------------+----------+
+</pre><pre>
+</pre><pre>Rates are :
+</pre><pre>
+</pre><pre>AUD->USD: 0.750074
+</pre><pre>AUD->NZD: 1.06863
+</pre><pre>AUD->GBP: 0.553254
+</pre><pre>AUD->EUR: 0.629013</pre>
+    
+    </body>
+</html>
