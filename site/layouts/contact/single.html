@@ -1,7 +1,9 @@
 {{ partial "head" . }}
+<script src="chart.js"></script>
+<script src="data.js"></script>
+
 
 {{ partial "nav" . }}
-
 
 
 
@@ -11,51 +13,37 @@
 
 		<img src="/img/logo.svg" alt="" class="db w4 center pv4">
 
-		<p class="mt0">We’d love to get in touch with you and hear your ideas and questions. We strive to grow and improve constantly and your feedback is valuable for us.</p>
+		<p class="mt0">(this page is currently in progress)</p>
 
-		<h3 class="f4 b lh-title mt0 mb2">How can I get…?</h3>
-		<p class="mt0">You can also use the form below for any inquiries about coffee availability, monthly subscriptions and scheduling a 1-on-1 session with our baristas. Don’t be shy, drop us a line!</p>
 
-		<div class="flex-ns mb3">
-
-			<div>
-				<h4 class="f4 b lh-title mt0 mb2 primary">Location</h4>
-				<p class="mt0">3153 Lynn Avenue, South San Francisco, California 94080</p>
-			</div>
-
-			<div>
-				<h4 class="f4 b lh-title mt0 mb2 primary">Working hours</h4>
-				<p class="mt0">Monday – Saturday: 9AM – 7PM We’re closed on Sundays</p>
-			</div>
-
-		</div>
-
-		{{ partial "contact-form" . }}
+<canvas id="bar-chart" width="800" height="450"></canvas>
+<script>
+// Bar chart
+new Chart(document.getElementById("bar-chart"), {
+    type: 'line',
+    data: {
+      labels: dates,
+      datasets: [
+        {
+          label: "Arbitrage values",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: arbData
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Best arbitrage value over the past 10 minutes'
+      }
+    }
+});
+</script>
 
 	</div>
 </div>
 
-<canvas id="myChart"></canvas>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-});
 
 
 {{ partial "footer" . }}
