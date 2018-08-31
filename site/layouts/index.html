@@ -1,36 +1,39 @@
 {{ partial "head" . }} {{ partial "nav" . }} <pre>BTC Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 Coinspot	|	9490.0  	|	9635.0
-CSpot B/S	|	9558.8  	|	9578.0
+CSpot B/S	|	9555.7  	|	9581.9
 Coinjar 	|	9469.0  	|	9500.0
 ACX.io   	|	9516.5  	|	9567.5
 BTC Mrkts	|	9570.8  	|	9595.0
-IND RES  	|	9597.4  	|	9637.3
-Coinfloor	|	5374.0  	|	5379.0
-KrakenUS	|	6974.5  	|	6976.9
-Bittrex 	|	6965.0  	|	6995.0
+IND RES  	|	9586.9  	|	9626.6
+Bitfinex	|	6975.0  	|	6975.1
+Coinfloor	|	5363.0  	|	5371.0
+KrakenUS	|	6974.5  	|	6974.6
+Bittrex 	|	6971.1  	|	6994.6
 Gemini  	|	6968.7  	|	6968.8
-Bitstamp	|	6970.6  	|	6975.4
+Bitstamp	|	6966.6  	|	6971.8
 --------------------------------------------------------------------
 BTC Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	9490.0  	|	9635.0
-CSpot B/S	|	9558.8  	|	9577.95
+CSpot B/S	|	9555.67  	|	9581.88
 Coinjar 	|	9469.0  	|	9500.0
-ACX.io   	|	9516.51  	|	9582.358
-BTC Mrkts	|	9568.037  	|	9595.0
-IND RES  	|	9597.412  	|	9634.52
-Coinfloor	|	9631.995  	|	9657.536
-KrakenUS	|	9621.314  	|	9624.625
-Bittrex 	|	9604.292  	|	9649.594
-Gemini  	|	9613.162  	|	9614.489
-Bitstamp	|	9611.702  	|	9622.624
+ACX.io   	|	9516.51  	|	9574.407
+BTC Mrkts	|	9565.548  	|	9595.0
+IND RES  	|	9584.712  	|	9622.82
+Bitfinex	|	9622.004  	|	9622.142
+Coinfloor	|	9603.559  	|	9640.029
+KrakenUS	|	9621.314  	|	9621.452
+Bittrex 	|	9604.993  	|	9649.042
+Gemini  	|	9610.927  	|	9613.382
+Bitstamp	|	9608.648  	|	9617.713
 --------------------------------------------------------------------
 
 
 BTC MARGIN COMBINATIONS (Trade fees and exchange rates included only)
 Direction		|	 Margin
-Coinjar  -> Coinfloor 	|	 1.2%
+Coinjar  -> Bitfinex 	|	 1.1%
+Coinjar  -> Coinfloor 	|	 0.8%
 Coinjar  -> KrakenUS 	|	 1.0%
 Coinjar  -> Bittrex  	|	 0.8%
 Coinjar  -> Gemini   	|	 0.9%
@@ -45,11 +48,12 @@ Direction		|	 Profit
 ETH Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 Coinspot	|	380.0  	|	396.5
-CSpot B/S	|	387.6  	|	389.0
-Coinjar 	|	388.8  	|	390.4
+CSpot B/S	|	387.6  	|	388.9
+Coinjar 	|	388.6  	|	390.1
 ACX.io   	|	387.8  	|	389.9
 BTC Mrkts	|	389.0  	|	390.3
-IND RES  	|	388.9  	|	391.1
+IND RES  	|	388.6  	|	390.7
+Bitfinex	|	282.8  	|	282.9
 KrakenUS	|	282.8  	|	282.9
 Bittrex 	|	283.0  	|	283.5
 Gemini  	|	283.0  	|	283.0
@@ -58,15 +62,16 @@ Bitstamp	|	282.6  	|	282.6
 ETH Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	380.03  	|	396.5
-CSpot B/S	|	387.6  	|	389.02
-Coinjar 	|	388.769  	|	390.416
-ACX.io   	|	384.483  	|	389.991
-BTC Mrkts	|	388.227  	|	390.409
-IND RES  	|	388.91  	|	391.078
-KrakenUS	|	389.926  	|	390.62
-Bittrex 	|	389.353  	|	391.219
-Gemini  	|	389.912  	|	390.412
-Bitstamp	|	389.649  	|	389.989
+CSpot B/S	|	387.63  	|	388.87
+Coinjar 	|	388.568  	|	390.127
+ACX.io   	|	386.914  	|	389.991
+BTC Mrkts	|	388.127  	|	390.379
+IND RES  	|	388.57  	|	390.74
+Bitfinex	|	390.177  	|	390.191
+KrakenUS	|	390.069  	|	390.511
+Bittrex 	|	389.353  	|	391.594
+Gemini  	|	389.656  	|	390.412
+Bitstamp	|	389.519  	|	389.969
 --------------------------------------------------------------------
 
 
@@ -86,22 +91,24 @@ CSpot B/S	|	82.4  	|	82.7
 Coinjar 	|	82.7  	|	83.1
 ACX.io   	|	81.7  	|	82.8
 BTC Mrkts	|	82.7  	|	83.1
-IND RES  	|	82.2  	|	83.2
+IND RES  	|	82.4  	|	83.2
+Bitfinex	|	60.1  	|	60.1
 KrakenUS	|	60.1  	|	60.2
 Bittrex 	|	60.1  	|	60.2
-Bitstamp	|	60.1  	|	60.2
+Bitstamp	|	60.0  	|	60.1
 --------------------------------------------------------------------
 LTC Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	82.0  	|	85.0
-CSpot B/S	|	82.4  	|	82.72
+CSpot B/S	|	82.37  	|	82.73
 Coinjar 	|	82.73  	|	83.06
-ACX.io   	|	80.793  	|	83.53
-BTC Mrkts	|	81.871  	|	84.539
-IND RES  	|	82.244  	|	83.525
-KrakenUS	|	83.065  	|	83.051
-Bittrex 	|	82.582  	|	83.214
-Bitstamp	|	82.88  	|	83.105
+ACX.io   	|	81.568  	|	83.618
+BTC Mrkts	|	82.001  	|	84.336
+IND RES  	|	82.19  	|	84.029
+Bitfinex	|	82.836  	|	82.889
+KrakenUS	|	82.689  	|	82.909
+Bittrex 	|	82.506  	|	83.179
+Bitstamp	|	82.744  	|	83.289
 --------------------------------------------------------------------
 
 
@@ -116,25 +123,27 @@ Direction		|	 Profit
 
 BCH Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
-CSpot B/S	|	735.3  	|	741.9
-ACX.io   	|	731.7  	|	740.8
+CSpot B/S	|	734.5  	|	741.6
+ACX.io   	|	731.7  	|	740.7
 BTC Mrkts	|	733.9  	|	739.0
-IND RES  	|	739.5  	|	746.9
+IND RES  	|	738.1  	|	744.5
+Bitfinex	|	537.8  	|	537.9
 Coinfloor	|	412.0  	|	416.0
-KrakenUS	|	537.7  	|	538.4
+KrakenUS	|	537.3  	|	538.0
 Bittrex 	|	536.4  	|	540.0
 Bitstamp	|	536.9  	|	538.6
 --------------------------------------------------------------------
 BCH Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
-CSpot B/S	|	735.33  	|	741.94
-ACX.io   	|	731.661  	|	741.72
+CSpot B/S	|	734.45  	|	741.64
+ACX.io   	|	729.777  	|	740.654
 BTC Mrkts	|	733.79  	|	739.0
-IND RES  	|	730.91  	|	746.529
-Coinfloor	|	676.104  	|	757.505
-KrakenUS	|	741.353  	|	742.81
-Bittrex 	|	739.014  	|	746.304
-Bitstamp	|	740.229  	|	743.11
+IND RES  	|	731.08  	|	779.388
+Bitfinex	|	741.938  	|	741.743
+Coinfloor	|	675.939  	|	757.507
+KrakenUS	|	739.73  	|	740.992
+Bittrex 	|	738.737  	|	744.929
+Bitstamp	|	739.401  	|	742.623
 --------------------------------------------------------------------
 
 
@@ -150,11 +159,13 @@ Direction		|	 Profit
 OMG Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 CSpot B/S	|	5.8  	|	5.8
+Bitfinex	|	4.2  	|	4.2
 Bittrex 	|	4.2  	|	4.2
 --------------------------------------------------------------------
 OMG Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 CSpot B/S	|	5.77  	|	5.82
+Bitfinex	|	5.794  	|	5.823
 Bittrex 	|	5.764  	|	5.848
 --------------------------------------------------------------------
 
@@ -175,7 +186,7 @@ Direction		|	 Profit
 +--------------------+----------+
 |   GatehubXRP/USD   | 0.331589 |
 |   GatehubXRP/BTC   | 0.337562 |
-|   BittrexXRP/BTC   | 0.335365 |
+|   BittrexXRP/BTC   | 0.335295 |
 | BTC MarketsXRP/AUD | 0.334785 |
 +--------------------+----------+
 
