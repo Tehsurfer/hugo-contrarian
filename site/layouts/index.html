@@ -1,39 +1,42 @@
 {{ partial "head" . }} {{ partial "nav" . }} <pre>BTC Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 Coinspot	|	9750.0  	|	9760.0
-CSpot B/S	|	9791.9  	|	9831.4
+CSpot B/S	|	9797.8  	|	9835.9
 Coinjar 	|	9357.2  	|	9700.0
 ACX.io   	|	9754.4  	|	9799.0
-BTC Mrkts	|	9778.0  	|	9789.0
-IND RES  	|	9802.1  	|	9822.1
+BTC Mrkts	|	9775.0  	|	9789.0
+IND RES  	|	9803.1  	|	9822.1
+Bitfinex	|	0.0  	|	1000000
 Coinfloor	|	5456.0  	|	5460.0
-KrakenUS	|	7059.8  	|	7060.0
-Bittrex 	|	7052.7  	|	7053.0
-Gemini  	|	7059.6  	|	7066.1
-Bitstamp	|	7060.2  	|	7065.0
+KrakenUS	|	7059.9  	|	7060.0
+Bittrex 	|	7052.7  	|	7062.2
+Gemini  	|	7060.6  	|	7066.1
+Bitstamp	|	7060.3  	|	7065.0
 --------------------------------------------------------------------
 BTC Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	9750.0  	|	9759.99
-CSpot B/S	|	9791.86  	|	9831.37
-Coinjar 	|	9357.235  	|	9700.0
+CSpot B/S	|	9797.77  	|	9835.89
+Coinjar 	|	9357.239  	|	9700.0
 ACX.io   	|	9754.41  	|	9798.98
-BTC Mrkts	|	9767.884  	|	9789.789
-IND RES  	|	9802.111  	|	9822.13
+BTC Mrkts	|	9768.628  	|	9789.791
+IND RES  	|	9802.749  	|	9822.13
+Bitfinex	|	9838.801  	|	9838.94
 Coinfloor	|	9833.658  	|	9840.905
-KrakenUS	|	9817.386  	|	9817.664
-Bittrex 	|	9807.513  	|	9831.025
-Gemini  	|	9817.038  	|	9826.147
+KrakenUS	|	9817.525  	|	9817.664
+Bittrex 	|	9808.625  	|	9831.025
+Gemini  	|	9818.457  	|	9826.147
 Bitstamp	|	9818.012  	|	9824.617
 --------------------------------------------------------------------
 
 
 BTC MARGIN COMBINATIONS (Trade fees and exchange rates included only)
 Direction		|	 Margin
-Coinjar  -> Coinfloor 	|	 1.2%
+Coinjar  -> Bitfinex 	|	 1.2%
+Coinjar  -> Coinfloor 	|	 1.1%
 Coinjar  -> KrakenUS 	|	 1.0%
-Coinjar  -> Bittrex  	|	 0.8%
-Coinjar  -> Gemini   	|	 0.9%
+Coinjar  -> Bittrex  	|	 0.9%
+Coinjar  -> Gemini   	|	 1.0%
 Coinjar  -> Bitstamp 	|	 1.0%
 --------------------------------------------------------------------
 
@@ -45,27 +48,29 @@ Direction		|	 Profit
 ETH Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 Coinspot	|	390.0  	|	400.0
-CSpot B/S	|	397.9  	|	399.6
-Coinjar 	|	396.6  	|	399.5
+CSpot B/S	|	398.0  	|	399.6
+Coinjar 	|	396.6  	|	399.6
 ACX.io   	|	395.8  	|	398.9
-BTC Mrkts	|	396.7  	|	398.1
-IND RES  	|	398.0  	|	401.1
+BTC Mrkts	|	396.6  	|	398.1
+IND RES  	|	397.8  	|	400.9
+Bitfinex	|	0.0  	|	1000000
 KrakenUS	|	287.0  	|	287.0
-Bittrex 	|	286.6  	|	287.0
-Gemini  	|	286.4  	|	286.8
+Bittrex 	|	286.9  	|	287.0
+Gemini  	|	286.5  	|	286.8
 Bitstamp	|	286.7  	|	287.0
 --------------------------------------------------------------------
 ETH Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	390.0  	|	400.0
-CSpot B/S	|	397.89  	|	399.58
-Coinjar 	|	396.589  	|	399.5
-ACX.io   	|	395.134  	|	400.909
-BTC Mrkts	|	396.061  	|	398.344
-IND RES  	|	396.367  	|	401.09
-KrakenUS	|	398.816  	|	399.103
-Bittrex 	|	398.156  	|	400.211
-Gemini  	|	398.217  	|	398.767
+CSpot B/S	|	397.96  	|	399.58
+Coinjar 	|	396.588  	|	399.604
+ACX.io   	|	395.104  	|	402.102
+BTC Mrkts	|	396.024  	|	398.324
+IND RES  	|	396.431  	|	400.88
+Bitfinex	|	399.465  	|	399.479
+KrakenUS	|	399.195  	|	399.103
+Bittrex 	|	398.233  	|	400.342
+Gemini  	|	398.221  	|	398.767
 Bitstamp	|	398.879  	|	399.102
 --------------------------------------------------------------------
 
@@ -82,11 +87,11 @@ Direction		|	 Profit
 LTC Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
 Coinspot	|	87.0  	|	90.0
-CSpot B/S	|	89.4  	|	89.8
+CSpot B/S	|	89.5  	|	89.8
 Coinjar 	|	89.2  	|	89.8
-ACX.io   	|	88.8  	|	89.9
+ACX.io   	|	88.8  	|	89.8
 BTC Mrkts	|	89.0  	|	89.5
-IND RES  	|	88.9  	|	89.6
+IND RES  	|	89.0  	|	89.6
 KrakenUS	|	64.5  	|	64.5
 Bittrex 	|	64.5  	|	64.7
 Bitstamp	|	64.5  	|	64.6
@@ -94,61 +99,47 @@ Bitstamp	|	64.5  	|	64.6
 LTC Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
 Coinspot	|	87.0  	|	90.0
-CSpot B/S	|	89.42  	|	89.81
+CSpot B/S	|	89.45  	|	89.81
 Coinjar 	|	89.24  	|	89.79
-ACX.io   	|	86.924  	|	85.159
+ACX.io   	|	82.831  	|	90.068
 BTC Mrkts	|	88.97  	|	90.008
-IND RES  	|	88.709  	|	89.69
-KrakenUS	|	89.625  	|	89.809
+IND RES  	|	89.035  	|	89.69
+KrakenUS	|	89.652  	|	89.826
 Bittrex 	|	89.486  	|	89.972
-Bitstamp	|	89.616  	|	89.886
+Bitstamp	|	89.612  	|	89.895
 --------------------------------------------------------------------
 
 
 LTC MARGIN COMBINATIONS (Trade fees and exchange rates included only)
 Direction		|	 Margin
-ACX.io    -> Coinspot 	|	 1.0%
-ACX.io    -> CSpot B/S 	|	 2.8%
-ACX.io    -> Coinjar  	|	 4.6%
-ACX.io    -> ACX.io    	|	 1.7%
-ACX.io    -> BTC Mrkts 	|	 3.7%
-ACX.io    -> IND RES   	|	 3.5%
-ACX.io    -> KrakenUS 	|	 4.8%
-ACX.io    -> Bittrex  	|	 4.6%
-ACX.io    -> Bitstamp 	|	 4.8%
 --------------------------------------------------------------------
 
 
 LTC MARGIN COMBINATIONS for a 10k AUD move (All Fees included for a TWO way trip)
 Direction		|	 Profit
-ACX.io    -> CSpot B/S 	|	 215.59
-ACX.io    -> Coinjar  	|	 393.45
-ACX.io    -> BTC Mrkts 	|	 302.74
-ACX.io    -> IND RES   	|	 284.08
-ACX.io    -> KrakenUS 	|	 419.67
-ACX.io    -> Bittrex  	|	 398.33
-ACX.io    -> Bitstamp 	|	 413.64
+--- none :( ---
+
 BCH Native buy prices (for validation)
 Exchange 	|	 Buy Price 	|	 SellAsks 
-CSpot B/S	|	782.1  	|	786.2
+CSpot B/S	|	782.5  	|	786.9
 ACX.io   	|	776.1  	|	785.7
-BTC Mrkts	|	775.4  	|	778.0
-IND RES  	|	778.7  	|	785.6
-Coinfloor	|	430.0  	|	439.0
-KrakenUS	|	563.1  	|	564.0
-Bittrex 	|	561.6  	|	564.0
-Bitstamp	|	562.7  	|	563.5
+BTC Mrkts	|	775.6  	|	778.5
+IND RES  	|	780.8  	|	786.3
+Coinfloor	|	430.0  	|	440.0
+KrakenUS	|	563.8  	|	564.9
+Bittrex 	|	562.0  	|	564.0
+Bitstamp	|	563.0  	|	563.5
 --------------------------------------------------------------------
 BCH Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
-CSpot B/S	|	782.07  	|	786.25
-ACX.io   	|	776.08  	|	785.797
-BTC Mrkts	|	775.39  	|	787.342
-IND RES  	|	778.172  	|	786.879
-Coinfloor	|	775.016  	|	791.238
-KrakenUS	|	783.466  	|	785.57
-Bittrex 	|	781.265  	|	787.65
-Bitstamp	|	782.558  	|	786.256
+CSpot B/S	|	782.51  	|	786.87
+ACX.io   	|	776.151  	|	786.06
+BTC Mrkts	|	776.36  	|	787.824
+IND RES  	|	779.0  	|	787.708
+Coinfloor	|	775.016  	|	793.04
+KrakenUS	|	783.767  	|	785.552
+Bittrex 	|	782.042  	|	787.65
+Bitstamp	|	782.971  	|	786.844
 --------------------------------------------------------------------
 
 
@@ -168,8 +159,8 @@ Bittrex 	|	4.3  	|	4.4
 --------------------------------------------------------------------
 OMG Market Prices
 Exchange 	|	 Buy Bids 	|	 Sell Asks 
-CSpot B/S	|	6.02  	|	6.07
-Bittrex 	|	6.284  	|	6.071
+CSpot B/S	|	6.03  	|	6.07
+Bittrex 	|	6.283  	|	6.071
 --------------------------------------------------------------------
 
 
@@ -188,8 +179,8 @@ Direction		|	 Profit
 |       Market       |  Price   |
 +--------------------+----------+
 |   GatehubXRP/USD   | 0.338029 |
-|   GatehubXRP/BTC   | 0.337991 |
-|   BittrexXRP/BTC   | 0.340626 |
+|   GatehubXRP/BTC   | 0.337908 |
+|   BittrexXRP/BTC   | 0.340261 |
 | BTC MarketsXRP/AUD | 0.339062 |
 +--------------------+----------+
 
